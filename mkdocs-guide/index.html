@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>June Kim's Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>MkDocs 안내 - June Kim's Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">June Kim's Docs</a>
+                <a class="navbar-brand" href="..">June Kim's Docs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,13 +35,13 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                                <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="mkdocs-guide/" class="nav-link">MkDocs 안내</a>
+                                <a href="./" class="nav-link active" aria-current="page">MkDocs 안내</a>
                             </li>
                             <li class="nav-item">
-                                <a href="google-adk/" class="nav-link">Google ADK 소개</a>
+                                <a href="../google-adk/" class="nav-link">Google ADK 소개</a>
                             </li>
                         </ul>
 
@@ -52,12 +52,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="mkdocs-guide/" class="nav-link">
+                                <a rel="next" href="../google-adk/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -79,8 +79,16 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#june-kim" class="nav-link">June Kim의 위키에 오신 것을 환영합니다</a>
+            <li class="nav-item" data-bs-level="1"><a href="#mkdocs" class="nav-link">MkDocs 안내</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">주요 명령어</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">프로젝트 구조</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -88,14 +96,22 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="june-kim">June Kim의 위키에 오신 것을 환영합니다</h1>
-<p>이 위키는 June Kim이 지식과 경험을 정리하고 공유하기 위해 만든 개인 위키입니다.</p>
+<h1 id="mkdocs">MkDocs 안내</h1>
+<p>이 페이지는 MkDocs 사용법과 프로젝트 구조에 대해 안내합니다.</p>
+<h2 id="_1">주요 명령어</h2>
 <ul>
-<li>다양한 개발 관련 정보와 노하우</li>
-<li>관심 있는 기술 및 도구 소개</li>
-<li>프로젝트 및 학습 기록 등</li>
+<li><code>mkdocs new [dir-name]</code> - 새 프로젝트 생성</li>
+<li><code>mkdocs serve</code> - 라이브 리로딩 문서 서버 실행</li>
+<li><code>mkdocs build</code> - 문서 사이트 빌드</li>
+<li><code>mkdocs -h</code> - 도움말 메시지 출력</li>
 </ul>
-<p>정보를 쉽게 찾을 수 있도록 정리하고, 지속적으로 새로운 내용을 추가할 계획입니다.</p></div>
+<h2 id="_2">프로젝트 구조</h2>
+<pre><code>mkdocs.yml    # 설정 파일
+docs/
+    index.md  # 문서 홈페이지
+    ...       # 기타 마크다운 페이지, 이미지 등
+</code></pre>
+<p>자세한 내용은 <a href="https://www.mkdocs.org">mkdocs.org</a>에서 확인할 수 있습니다. </p></div>
             </div>
         </div>
 
@@ -103,13 +119,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -174,8 +190,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-06-14 08:29:46.990319+00:00
--->
