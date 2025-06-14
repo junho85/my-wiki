@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# June Kim의 위키에 오신 것을 환영합니다
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+이 위키는 June Kim이 지식과 경험을 정리하고 공유하기 위해 만든 개인 위키입니다.
 
-## Commands
+- 다양한 개발 관련 정보와 노하우
+- 관심 있는 기술 및 도구 소개
+- 프로젝트 및 학습 기록 등
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+정보를 쉽게 찾을 수 있도록 정리하고, 지속적으로 새로운 내용을 추가할 계획입니다.

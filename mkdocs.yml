@@ -1,1 +1,6 @@
-site_name: My Docs
+site_name: June Kim's Docs
+
+nav:
+  - Home: index.md
+  - MkDocs 안내: mkdocs-guide.md
+  - Google ADK 소개: google-adk.md
