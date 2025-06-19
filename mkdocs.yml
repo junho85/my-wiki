@@ -1,6 +1,32 @@
 site_name: June Kim's Docs
 
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+
 nav:
   - Home: index.md
   - MkDocs 안내: mkdocs-guide.md
   - Google ADK 소개: google-adk.md
+
+extra_css:
+  - css/extra.css
