@@ -9,3 +9,4 @@ site/
 .idea/
 *.swp
 .DS_Store
+.claude/
