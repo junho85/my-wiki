@@ -26,7 +26,29 @@ theme:
 nav:
   - Home: index.md
   - MkDocs 안내: mkdocs-guide.md
+  - MkDocs와 GitHub Pages로 위키 사이트 만들기: mkdocs-github-pages.md
   - Google ADK 소개: google-adk.md
 
 extra_css:
   - css/extra.css
+
+markdown_extensions:
+  - mdx_truly_sane_lists:
+      nested_indent: 2
+      truly_sane: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
