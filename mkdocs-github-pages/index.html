@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../mkdocs-guide/">
       
       
-        <link rel="next" href="../mkdocs-github-pages/">
+        <link rel="next" href="../google-adk/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>MkDocs 안내 - June Kim's Docs</title>
+        <title>MkDocs와 GitHub Pages로 위키 사이트 만들기 - June Kim's Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocs" class="md-skip">
+        <a href="#mkdocs-github-pages" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MkDocs 안내
+              MkDocs와 GitHub Pages로 위키 사이트 만들기
             
           </span>
         </div>
@@ -224,11 +224,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../mkdocs-guide/" class="md-tabs__link">
         
   
   
@@ -245,9 +243,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../mkdocs-github-pages/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -340,6 +340,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs 안내
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -357,7 +379,7 @@
   
   
   <span class="md-ellipsis">
-    MkDocs 안내
+    MkDocs와 GitHub Pages로 위키 사이트 만들기
     
   </span>
   
@@ -370,7 +392,7 @@
   
   
   <span class="md-ellipsis">
-    MkDocs 안내
+    MkDocs와 GitHub Pages로 위키 사이트 만들기
     
   </span>
   
@@ -395,7 +417,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      주요 명령어
+      사전 준비사항
     </span>
   </a>
   
@@ -404,7 +426,211 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      프로젝트 구조
+      프로젝트 환경 설정
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="프로젝트 환경 설정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 프로젝트 디렉토리 생성
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Python 가상환경 설정
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. MkDocs 설치
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. MkDocs 프로젝트 초기화
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub 리포지토리 설정
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub 리포지토리 설정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Git 초기화
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. .gitignore 파일 생성
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. GitHub에서 새 리포지토리 생성
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 리모트 저장소 연결 및 푸시
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      사이트 배포
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="사이트 배포">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. GitHub Pages로 배포
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 사이트 확인
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      위키 문서 추가
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="위키 문서 추가">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 새 문서 생성
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 네비게이션 설정
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 로컬에서 미리보기
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 변경사항 배포
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material 테마 적용 (선택사항)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      팁
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      참고 자료
     </span>
   </a>
   
@@ -414,28 +640,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mkdocs-github-pages/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MkDocs와 GitHub Pages로 위키 사이트 만들기
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -478,22 +682,122 @@
 
 
 
-<h1 id="mkdocs">MkDocs 안내</h1>
-<p>이 페이지는 MkDocs 사용법과 프로젝트 구조에 대해 안내합니다.</p>
-<h2 id="_1">주요 명령어</h2>
+<h1 id="mkdocs-github-pages">MkDocs와 GitHub Pages로 위키 사이트 만들기</h1>
+<p>MkDocs와 GitHub Pages를 활용하면 간단하게 위키 사이트를 만들고 무료로 호스팅할 수 있습니다.</p>
+<h2 id="_1">사전 준비사항</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - 새 프로젝트 생성</li>
-<li><code>mkdocs serve</code> - 라이브 리로딩 문서 서버 실행</li>
-<li><code>mkdocs build</code> - 문서 사이트 빌드</li>
-<li><code>mkdocs -h</code> - 도움말 메시지 출력</li>
+<li>Python 설치</li>
+<li>Git 설치</li>
+<li>GitHub 계정</li>
 </ul>
-<h2 id="_2">프로젝트 구조</h2>
-<pre><code>mkdocs.yml    # 설정 파일
-docs/
-    index.md  # 문서 홈페이지
-    ...       # 기타 마크다운 페이지, 이미지 등
-</code></pre>
-<p>자세한 내용은 <a href="https://www.mkdocs.org">mkdocs.org</a>에서 확인할 수 있습니다. </p>
+<h2 id="_2">프로젝트 환경 설정</h2>
+<h3 id="1">1. 프로젝트 디렉토리 생성</h3>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>my-wiki
+<span class="nb">cd</span><span class="w"> </span>my-wiki
+</code></pre></div>
+<h3 id="2-python">2. Python 가상환경 설정</h3>
+<p>pyenv를 사용하는 경우
+<div class="highlight"><pre><span></span><code>pyenv<span class="w"> </span><span class="nb">local</span><span class="w"> </span><span class="m">3</span>.12.2
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate<span class="w">  </span><span class="c1"># Mac/Linux</span>
+<span class="c1"># Windows: .venv\Scripts\activate</span>
+</code></pre></div></p>
+<h3 id="3-mkdocs">3. MkDocs 설치</h3>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
+</code></pre></div>
+<h3 id="4-mkdocs">4. MkDocs 프로젝트 초기화</h3>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>new<span class="w"> </span>.
+</code></pre></div>
+<p>이 명령어는 다음과 같은 구조를 생성합니다.
+<div class="highlight"><pre><span></span><code>my-wiki/
+├── docs/
+│   └── index.md
+└── mkdocs.yml
+</code></pre></div></p>
+<h2 id="github">GitHub 리포지토리 설정</h2>
+<h3 id="1-git">1. Git 초기화</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>init
+</code></pre></div>
+<h3 id="2-gitignore">2. .gitignore 파일 생성</h3>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;.venv/&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>.gitignore
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;site/&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>.gitignore
+</code></pre></div>
+<h3 id="3-github">3. GitHub에서 새 리포지토리 생성</h3>
+<p>GitHub에서 새 리포지토리를 생성합니다 (예: <code>my-wiki</code>)</p>
+<h3 id="4">4. 리모트 저장소 연결 및 푸시</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
+git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>git@github.com:&lt;username&gt;/my-wiki.git
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+<h2 id="_3">사이트 배포</h2>
+<h3 id="1-github-pages">1. GitHub Pages로 배포</h3>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
+<p>이 명령어는</p>
+<ul>
+<li>사이트를 빌드하고</li>
+<li><code>gh-pages</code> 브랜치를 생성하여</li>
+<li>빌드된 파일을 푸시합니다</li>
+</ul>
+<h3 id="2">2. 사이트 확인</h3>
+<p>배포가 완료되면 다음 주소에서 사이트를 확인할 수 있습니다.
+<div class="highlight"><pre><span></span><code>https://&lt;username&gt;.github.io/&lt;repo-name&gt;/
+</code></pre></div></p>
+<h2 id="_4">위키 문서 추가</h2>
+<h3 id="1_1">1. 새 문서 생성</h3>
+<p><code>docs</code> 폴더에 마크다운 파일을 추가합니다.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 예: MkDocs 가이드 문서 생성</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# MkDocs 가이드&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>docs/mkdocs-guide.md
+</code></pre></div>
+<h3 id="2_1">2. 네비게이션 설정</h3>
+<p><code>mkdocs.yml</code> 파일을 수정하여 네비게이션을 구성합니다.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Wiki</span>
+
+<span class="nt">nav</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">MkDocs 가이드</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-guide.md</span>
+</code></pre></div>
+<h3 id="3">3. 로컬에서 미리보기</h3>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+<p>브라우저에서 <code>http://127.0.0.1:8000</code>으로 접속하여 확인할 수 있습니다.</p>
+<h3 id="4_1">4. 변경사항 배포</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add MkDocs guide&quot;</span>
+git<span class="w"> </span>push
+mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
+<h2 id="material">Material 테마 적용 (선택사항)</h2>
+<p>더 현대적인 디자인을 원한다면 Material 테마를 적용할 수 있습니다.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My Wiki</span>
+
+<span class="nt">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ko</span>
+<span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.sections</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc.integrate</span>
+
+<span class="nt">nav</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">MkDocs 가이드</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-guide.md</span>
+</code></pre></div>
+<h2 id="_5">팁</h2>
+<ul>
+<li><strong>자동 배포</strong>: GitHub Actions를 설정하면 main 브랜치에 푸시할 때마다 자동으로 배포할 수 있습니다</li>
+<li><strong>커스텀 도메인</strong>: GitHub Pages 설정에서 커스텀 도메인을 연결할 수 있습니다</li>
+<li><strong>플러그인</strong>: MkDocs는 다양한 플러그인을 지원합니다 (검색, PDF 내보내기 등)</li>
+<li><strong>마크다운 확장</strong>: pymdown-extensions를 설치하면 더 많은 마크다운 기능을 사용할 수 있습니다</li>
+</ul>
+<h2 id="_6">참고 자료</h2>
+<ul>
+<li><a href="https://www.mkdocs.org/">MkDocs 공식 문서</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></li>
+<li><a href="https://docs.github.com/en/pages">GitHub Pages 문서</a></li>
+</ul>
 
 
 

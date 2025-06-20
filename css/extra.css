@@ -1,0 +1,54 @@
+/* H2와 H3 구분을 명확하게 하는 스타일 */
+
+/* H2 스타일 */
+.md-typeset h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--md-primary-fg-color, #1976d2);
+  color: var(--md-primary-fg-color, #1976d2);
+}
+
+/* H3 스타일 */
+.md-typeset h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid var(--md-accent-fg-color, #ff4081);
+  color: var(--md-default-fg-color);
+}
+
+/* H2 첫 번째 요소의 상단 여백 조정 */
+.md-typeset h2:first-child {
+  margin-top: 0;
+}
+
+/* H3 첫 번째 요소의 상단 여백 조정 */
+.md-typeset h3:first-child {
+  margin-top: 0;
+}
+
+/* 기본 테마용 스타일 (Material 테마가 아닌 경우) */
+article h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #1976d2;
+  color: #1976d2;
+}
+
+article h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid #ff4081;
+  color: #333;
+}
