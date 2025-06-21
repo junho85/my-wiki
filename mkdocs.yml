@@ -3,6 +3,7 @@ site_name: June Kim's Docs
 theme:
   name: material
   language: ko
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -27,10 +28,16 @@ nav:
   - Home: index.md
   - MkDocs 안내: mkdocs-guide.md
   - MkDocs와 GitHub Pages로 위키 사이트 만들기: mkdocs-github-pages.md
+  - MkDocs에 Google AdSense 연동하기: mkdocs-adsense.md
   - Google ADK 소개: google-adk.md
 
 extra_css:
   - css/extra.css
+  - css/adsense.css
+
+extra_javascript:
+  - https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8756229796915320
+  - js/adsense.js
 
 markdown_extensions:
   - mdx_truly_sane_lists:
