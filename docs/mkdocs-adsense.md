@@ -12,7 +12,7 @@ MkDocs 사이트에 Google AdSense 광고를 추가하는 방법을 설명합니
 
 ### 1. AdSense 스크립트 파일 생성
 
-`docs/js/adsense.js` 파일을 생성합니다:
+`docs/js/adsense.js` 파일을 생성합니다.
 
 ```bash
 mkdir -p docs/js
@@ -59,7 +59,7 @@ theme:
 
 ### 3. 메인 템플릿 오버라이드
 
-`overrides/main.html` 파일 생성:
+`overrides/main.html` 파일 생성
 
 ```html
 {% extends "base.html" %}
@@ -93,7 +93,7 @@ theme:
 
 ### 1. 페이지 템플릿 생성
 
-`overrides/partials/adsense.html`:
+`overrides/partials/adsense.html`
 
 ```html
 <div class="adsense-container" style="margin: 2rem 0;">
@@ -131,7 +131,7 @@ theme:
 
 ## 광고 스타일링
 
-커스텀 CSS 추가 (`docs/css/adsense.css`):
+커스텀 CSS 추가 (`docs/css/adsense.css`)
 
 ```css
 /* AdSense 광고 컨테이너 스타일 */
@@ -161,7 +161,7 @@ theme:
 }
 ```
 
-mkdocs.yml에 CSS 추가:
+mkdocs.yml에 CSS 추가
 
 ```yaml
 extra_css:
@@ -210,16 +210,16 @@ function loadAdsense() {
 
 ## 테스트 및 디버깅
 
-1. **로컬 테스트**:
+1. **로컬 테스트**
    ```bash
    mkdocs serve
    ```
 
-2. **광고 표시 확인**:
+2. **광고 표시 확인**
    - 개발자 도구에서 광고 요청 확인
    - AdSense 대시보드에서 노출 수 확인
 
-3. **일반적인 문제**:
+3. **일반적인 문제**
    - 광고가 표시되지 않음: AdSense 승인 상태 확인
    - 레이아웃 깨짐: CSS 충돌 검사
    - 느린 로딩: 지연 로딩 구현 고려
