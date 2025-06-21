@@ -1,0 +1,62 @@
+/* Google AdSense 광고 스타일 */
+.adsense-container {
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* 광고 레이블 */
+.adsense-container::before {
+    content: "Advertisement";
+    display: block;
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.54);
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* 다크 모드에서의 광고 스타일 */
+[data-md-color-scheme="slate"] .adsense-container {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-md-color-scheme="slate"] .adsense-container::before {
+    color: rgba(255, 255, 255, 0.54);
+}
+
+/* 반응형 광고 조정 */
+@media (max-width: 768px) {
+    .adsense-container {
+        margin: 1rem -1rem;
+        padding: 0.75rem;
+        border-radius: 0;
+    }
+}
+
+/* 광고 블록 내 AdSense 스타일 */
+.adsbygoogle {
+    display: block;
+    text-align: center;
+}
+
+/* 사이드바 광고 (TOC 하단) */
+.md-sidebar--secondary .adsense-sidebar {
+    position: sticky;
+    top: 3.6rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+}
+
+/* 인라인 광고 스타일 */
+.adsense-inline {
+    margin: 1.5rem 0;
+    text-align: center;
+}
